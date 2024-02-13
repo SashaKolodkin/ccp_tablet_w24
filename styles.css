@@ -1,12 +1,14 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #0277bd;
 }
 
 .skip-link {
     position: absolute;
     top: -40px;
     left: 0;
-    background: #000;
+    background: #0288d1; 
     color: white;
     padding: 8px;
     z-index: 100;
@@ -19,16 +21,17 @@ body {
 .navigation {
     list-style: none;
     padding: 0;
-    background: #333;
-    text-align: center;
+    background: #01579b;
+    text-align: left;
 }
 
 .navigation li {
-    display: inline;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .navigation li a {
-    display: inline-block;
+    display: block;
     padding: 10px;
     color: white;
     text-decoration: none;
@@ -36,7 +39,7 @@ body {
 
 .navigation li a.active,
 .navigation li a:hover {
-    background: #555;
+    background: #0288d1;
 }
 
 .grid-container {
@@ -47,9 +50,11 @@ body {
 }
 
 .grid-item {
-    background: #f0f0f0;
+    background: #b3e5fc;
     padding: 20px;
-    text-align: center;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 600px) {
