@@ -1,14 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e1f5fe;
-    color: #01579b;
+    background-color: #e0f2f1;
+    color: #004d40;
 }
 
 .skip-link {
     position: absolute;
     top: -40px;
     left: 0;
-    background: #0277bd;
+    background: #00695c;
     color: white;
     padding: 8px;
     z-index: 100;
@@ -21,7 +21,7 @@ body {
 .navigation {
     list-style: none;
     padding: 0;
-    background: #013a63;
+    background: #004d40;
     text-align: left;
 }
 
@@ -39,7 +39,7 @@ body {
 
 .navigation li a.active,
 .navigation li a:hover {
-    background: #0288d1;
+    background: #00796b;
 }
 
 .grid-container {
@@ -50,12 +50,12 @@ body {
 }
 
 .grid-item {
-    background: #b3e5fc;
+    background: #b2dfdb;
     padding: 20px;
     text-align: left;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    color: #013a63;
+    color: #004d40;
 }
 
 @media (max-width: 600px) {
