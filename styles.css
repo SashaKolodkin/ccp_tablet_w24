@@ -1,14 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e0f2f1;
-    color: #004d40;
+    background-color: #e0f7fa;
+    color: #00251a;
 }
 
 .skip-link {
     position: absolute;
     top: -40px;
     left: 0;
-    background: #00695c;
+    background: #004d40;
     color: white;
     padding: 8px;
     z-index: 100;
@@ -21,7 +21,7 @@ body {
 .navigation {
     list-style: none;
     padding: 0;
-    background: #004d40;
+    background: #00251a;
     text-align: left;
 }
 
@@ -34,12 +34,11 @@ body {
     display: block;
     padding: 10px;
     color: white;
-    text-decoration: none;
 }
 
 .navigation li a.active,
 .navigation li a:hover {
-    background: #00796b;
+    background: #004d40;
 }
 
 .grid-container {
@@ -55,7 +54,7 @@ body {
     text-align: left;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    color: #004d40;
+    color: #00251a;
 }
 
 @media (max-width: 600px) {
