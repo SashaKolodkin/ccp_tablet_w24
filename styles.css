@@ -12,10 +12,13 @@ body {
     color: white;
     padding: 8px;
     z-index: 100;
+    transition: top 0.3s;
 }
 
-.skip-link:focus {
+.skip-link:focus, .skip-link:focus-visible {
     top: 0;
+    outline: none;
+    border: 2px solid #ff7043;
 }
 
 .navigation {
@@ -34,11 +37,13 @@ body {
     display: block;
     padding: 10px;
     color: white;
+    text-decoration: none;
 }
 
-.navigation li a.active,
+.navigation li a:active,
 .navigation li a:hover {
     background: #004d40;
+    text-decoration: underline;
 }
 
 .grid-container {
@@ -57,8 +62,50 @@ body {
     color: #00251a;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 601px) and (max-width: 1024px) {
     .grid-container {
         grid-template-columns: 1fr;
+    }
+
+
+    .grid-item:hover {
+        transform: scale(1.03);
+        transition: transform 0.3s ease-in-out;
+        border-color: #ff7043;
+    }
+
+
+    .skip-link:focus-visible {
+        top: 0;
+        background: #ff7043;
+    }
+
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .flex-item {
+        background: #80cbc4;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        color: #00251a;
+        flex: 0 1 auto;
+        width: 90%;
+        margin-bottom: 10px;
+        border: 2px solid transparent;
+    }
+
+    .flex-item:hover {
+        border-color: #ff7043;
+    }
+    .navigation li a:hover,
+    .navigation li a:active {
+        background: #ff7043;
+        color: #ffffff;
     }
 }
